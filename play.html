@@ -6,28 +6,108 @@
     <title>Job Fair 2024</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: Arial, sans-serif;
             margin: 0;
             background-color: #f0f0f0;
         }
-
         .container {
-            text-align: center;
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        .container img {
+        .header, .footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
             max-width: 100%;
             height: auto;
-            border: 1px solid #ccc;
+        }
+        .content {
+            text-align: center;
+        }
+        .content h1 {
+            color: #2c3e50;
+        }
+        .content p {
+            color: #34495e;
+        }
+        .details, .contact {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .details div, .contact div {
+            text-align: center;
+        }
+        .contact div img {
+            width: 50px;
+            height: 50px;
+        }
+        .register {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .register a {
+            background-color: #8e44ad;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://graph.org/file/bbd0f72e8ac84acafde9b.jpg" alt="Job Fair 2024">
+        <div class="header">
+            <img src="job-fair-2024.jpg" alt="Job Fair 2024">
+        </div>
+        <div class="content">
+            <h1>Job Fair 2024</h1>
+            <p>Saturday, 27 April | 10:00 AM to 02:00 PM</p>
+            <p>2nd Floor, Premier Plaza, No-122/5 Bharathiyar Salai, opp. RC School, Cantonment, Trichy-01.</p>
+        </div>
+        <div class="details">
+            <div>
+                <h2>Date</h2>
+                <p>27 April</p>
+            </div>
+            <div>
+                <h2>Time</h2>
+                <p>10:00 AM to 02:00 PM</p>
+            </div>
+            <div>
+                <h2>Location</h2>
+                <p>Trichy-01</p>
+            </div>
+        </div>
+        <div class="contact">
+            <div>
+                <img src="tos-it-services-logo.png" alt="Tos IT Services">
+                <p>Tos IT Services</p>
+            </div>
+            <div>
+                <img src="propel-logo.png" alt="Propel">
+                <p>Propel</p>
+            </div>
+            <div>
+                <img src="qrs-solutions-logo.png" alt="QRS Solutions">
+                <p>QRS Solutions</p>
+            </div>
+            <div>
+                <img src="innowskill-logo.png" alt="Innowskill">
+                <p>Innowskill</p>
+            </div>
+        </div>
+        <div class="register">
+            <a href="#">Register Now</a>
+        </div>
+        <div class="footer">
+            <p>Contact: 9585520981 / 9585520983 | Email: biglearncorp@gmail.com</p>
+        </div>
     </div>
 </body>
 </html>
