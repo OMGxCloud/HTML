@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f0f0f0;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
         }
         .container {
             width: 80%;
@@ -16,8 +16,9 @@
             margin: 20px auto;
             background-color: #ffffff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            border: 2px solid #8e44ad;
         }
         .header {
             text-align: center;
@@ -26,7 +27,7 @@
         .header img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 15px;
         }
         .content {
             text-align: center;
@@ -35,10 +36,15 @@
         .content h1 {
             color: #2c3e50;
             margin-bottom: 10px;
+            font-size: 2.5em;
+            background: -webkit-linear-gradient(#eeaeca, #94bbe9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .content p {
             color: #34495e;
             margin: 5px 0;
+            font-size: 1.2em;
         }
         .details, .contact {
             display: flex;
@@ -48,20 +54,30 @@
         .details div, .contact div {
             text-align: center;
         }
+        .details div h2, .contact div p {
+            color: #8e44ad;
+        }
         .contact div img {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
         }
         .register {
             text-align: center;
             margin: 20px 0;
         }
         .register a {
-            background-color: #8e44ad;
+            background: linear-gradient(to right, #8e44ad, #3498db);
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .register a:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
         .social {
             text-align: center;
@@ -71,6 +87,7 @@
             margin: 0 10px;
             text-decoration: none;
             color: #8e44ad;
+            font-size: 1.5em;
         }
         .map {
             text-align: center;
@@ -80,11 +97,12 @@
             width: 100%;
             height: 300px;
             border: none;
-            border-radius: 8px;
+            border-radius: 15px;
         }
         .footer {
             text-align: center;
             margin-top: 20px;
+            color: #8e44ad;
         }
     </style>
 </head>
@@ -142,12 +160,7 @@
             <a href="https://www.linkedin.com">LinkedIn</a>
         </div>
         <div class="footer">
-            <p>
-                <img src="phone-call.png" alt="Contact"> 9585520981 / 9585520983
-            </p>
-            <p>
-                <img src="email.png" alt="Email"> biglearncorp@gmail.com
-            </p>
+            <p>Contact: 9585520981 / 9585520983 | Email: biglearncorp@gmail.com</p>
         </div>
     </div>
 </body>
